@@ -78,12 +78,16 @@ program
   });
 
 program
-  .command("decrypt <input> <output>")
+  .command("decrypt <input> [output]")
   .option("-p, --password <password>", "Password for decryption")
   .description("Decrypt a .enc file back to original")
   .action((input, output, options) => {
     const password = getPassword(options.password);
-    decryptFile(input, output, password);
+
+    // default output = input without .enc
+    const finalOutput = output || input.replace(/\.enc$/, "");
+
+    decryptFile(input, finalOutput, password);
   });
 
 program.parse(process.argv);
