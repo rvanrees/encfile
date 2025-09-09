@@ -1,6 +1,6 @@
 {
   "name": "encfile-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Encrypt and decrypt files securely with a password, fast and simple.",
   "main": "dist/cli.js",
   "bin": {
