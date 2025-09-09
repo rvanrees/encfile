@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import * as fs from "fs";
 import * as crypto from "crypto";
 import { Command } from "commander";
