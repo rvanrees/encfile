@@ -1,11 +1,11 @@
-# encfile
+# encfile-cli
 
-Simple CLI tool to encrypt and decrypt files with a password.
+Encrypt and decrypt files securely with a password, fast and simple.
 
 ## Installation
 
 ```bash
-npm install -g encfile
+npm install -g encfile-cli
 ```
 
 ## Usage
@@ -14,21 +14,21 @@ npm install -g encfile
 
 ```bash
 # Prompt for password
-encfile encrypt data.csv
+encfile-cli encrypt data.csv
 
 # Or provide password directly
-encfile encrypt data.csv -p MyStrongPassword
+encfile-cli encrypt data.csv -p MyStrongPassword
 ```
 
 ### Decrypt a file
 
 ```bash
 # Prompt for password
-encfile decrypt data.csv.enc
+encfile-cli decrypt data.csv.enc
 
 # Or provide password directly
-encfile decrypt data.csv.enc -p MyStrongPassword
+encfile-cli decrypt data.csv.enc -p MyStrongPassword
 
 # Optional: specify output file name
-encfile decrypt data.csv.enc myfile.csv
+encfile-cli decrypt data.csv.enc myfile.csv
 ```
